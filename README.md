@@ -26,3 +26,7 @@ UW BOOTCAMP COURSE
 regex101 - https://regex101.com/
 
 https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions
+
+https://www.javascripttutorial.net/javascript-regex/

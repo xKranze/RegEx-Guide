@@ -10,7 +10,7 @@ I
 ## Usage
 -Please click on the link below to be directed to the RegEx GitHub Gist.
 
-<a href="https://gist.github.com/xKranze/f0ae056d77f559a6850990e5f399c853">RegEx Gist Link</a>
+<a href="https://gist.github.com/xKranze/ee892778f469c4cfc1a1b5334891fa07">RegEx Gist Link</a>
 
     
 ![alt text](./)

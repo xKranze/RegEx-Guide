@@ -1,12 +1,12 @@
 # RegEx Guide
 
-This will be a RegEx guide for me and anyone else that would like to see notes and description of about RegEx.
+  In this guide i will be breaking down the Hex Value `/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`
 
 ## Summary
 
   What is a RegEx? A regex, which is short for regular expression, is a sequence of characters that forms a pattern. When included in code or search regex can be used to find certain patterns of characters within a string, or to find and replace a character or sequence of characters within a string. They are also used alot to validate inputs.
 
-  In this guide i will be breaking down the Hex Value `/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`
+
 
 ## Table of Contents
 
@@ -41,10 +41,16 @@ Here is an example of the hexidecimal color code displaying the use of the ancho
 
 -Quantifiers are special characters that are used to speicify the number of times a specific character should be matched.  This allows you to specify how many times an element must appear in a string for a match to be found.
 
+In this example `/^#?([a-f0-9]{6}|[a-f0-9]{3})$/` there are two types of quantifiers used, one of them is used twice.  The first quantifier used here is the `?` (question mark).  The `?` indicates that the preceding character can occur zero or one times
+
+The second type of quantifier being used represented by the {n} curly braces which contains a numeric value.  In this case `[a-f0-9]{3}` the quantifier `{3}`is used here showing is looking to match a sequence of three characters that can be any letter from a to f, any number from 0 to 9.
 
 <hr>
 
 ### OR Operator
+
+The the OR operator allows you to match one or more different expressions.  In this hex example `/^#?([a-f0-9]{6}|[a-f0-9]{3})$/` the ones used here are the bar `|` symbol which seperates the two expressions and depending on the parameters needed to match it will match one or the oother expression on other side of the bar.  The other OR operator seen is the brackets `[]` which will match either `[a-f0-9]{6}` OR `[a-f0-9]{3}`.
+
 
 <hr>
 

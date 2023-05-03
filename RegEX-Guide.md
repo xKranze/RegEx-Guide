@@ -4,9 +4,7 @@
 
 ## Summary
 
-  What is a RegEx? A regex, which is short for regular expression, is a sequence of characters that forms a pattern. When included in code or search regex can be used to find certain patterns of characters within a string, or to find and replace a character or sequence of characters within a string. They are also used alot to validate inputs.
-
-
+What is a RegEx? A regex, which is short for regular expression, is a sequence of characters that forms patterns. We can use regex in our code or search to match certain patterns given specific parameters we set. These are also often used to validate inputs.
 
 ## Table of Contents
 
@@ -14,13 +12,8 @@
 - [Quantifiers](#quantifiers)
 - [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
-- [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
 <hr>
@@ -44,32 +37,27 @@ Here is an example of the hexidecimal color code displaying the use of the ancho
 In this example `/^#?([a-f0-9]{6}|[a-f0-9]{3})$/` there are two types of quantifiers used, one of them is used twice.  The first quantifier used here is the `?` (question mark).  The `?` indicates that the preceding character can occur zero or one times
 
 The second type of quantifier being used represented by the {n} curly braces which contains a numeric value.  In this case `[a-f0-9]{3}` the quantifier `{3}`is used here showing is looking to match a sequence of three characters that can be any letter from a to f, any number from 0 to 9.
-
 <hr>
 
 ### OR Operator
 
 The the OR operator allows you to match one or more different expressions.  In this hex example `/^#?([a-f0-9]{6}|[a-f0-9]{3})$/` the ones used here are the bar `|` symbol which seperates the two expressions and depending on the parameters needed to match it will match one or the oother expression on other side of the bar.  The other OR operator seen is the brackets `[]` which will match either `[a-f0-9]{6}` OR `[a-f0-9]{3}`.
-
-
 <hr>
-
 
 ### Character Classes
 
-### Flags
+A character class defines a set of characters and is similar to bracket expressions.  Using our hex regex `[a-f0-9` this will match any lowercase letter from a through f and a number from 0 through 9.
+<hr>
 
 ### Grouping and Capturing
 
+As some regex gets more complex, you will want to use grouping and capturing to specify part of a string to see if they meet certain parameters.  To do this we use `()` parentheses to group an expression like this `([a-f0-9]{6}|[a-f0-9]{3})` each section within the parenteses is known as a subexpression.
+<hr>
+
 ### Bracket Expressions
 
-### Greedy and Lazy Match
-
-### Boundaries
-
-### Back-references
-
-### Look-ahead and Look-behind
+Bracket expressions are basically anything inside the `[]` square brackets.  In our example `[a-f0-9]` in this square bracket we are looking to match a letter from a to f, any number from 0 to 9.
+<hr>
 
 ## Author
 
